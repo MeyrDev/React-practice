@@ -6,8 +6,7 @@ const ColorsList = (props) => {
     console.log(props)
     
     return (
-        <div className="item--list"      
-            onClick={() => {console.log(1); props.routeExample()}}>
+        <div className="item--list">
                               
             {
                 !props.colors.length ? 

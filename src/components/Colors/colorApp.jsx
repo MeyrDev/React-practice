@@ -34,14 +34,13 @@ export const NewColor = connect(
 class ColorContainer extends Component {
 
     render() {
-        console.log(this.props)
         return (
             <div>
                 some routeExample
 
                 <Switch>
-                    <Route exact path="/comps" render={() => <ColorsList colors={this.props.colors} />}></Route>
-                    <Route path="/comps/some" render={() => <NewColor colors={this.props.colors} />} />
+                    <Route path="/" render={() => <ColorsList colors={this.props.colors} />}></Route>
+                    <Route path="/" render={() => <NewColor colors={this.props.colors} />} />
                 </Switch>
             </div>
         )

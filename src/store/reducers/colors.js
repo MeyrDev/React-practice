@@ -8,10 +8,7 @@ export default (state = [], action) => {
             return [...state, color({}, action)]
         case C.RATE_COLOR:
             return state.map(item => (
-                (item.id == action.id) ? {
-                    ...item,
-                    rating: action.rating
-                } : item
+                color(item, action)
             ))
         case C.REMOVE_COLOR:
             return state.filter(item => (

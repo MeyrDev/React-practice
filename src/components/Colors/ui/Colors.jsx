@@ -15,7 +15,7 @@ class Colors extends Component {
     render() {
         let {title, color, rating, id, onRate, onRemove} = this.props
         return (
-            <div className="item" style={this.style} onClick={() => this.props.onChangeRoute()}>
+            <div className="item" style={this.style}>
                 <span onClick={() => onRemove(id)}>X</span>
                 <h5>{title}</h5>
                 <div className="back" style={{backgroundColor: color}}></div>

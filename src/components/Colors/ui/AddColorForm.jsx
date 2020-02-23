@@ -1,39 +1,5 @@
 import React, {Component} from 'react'
 import PropTypes from 'prop-types'
-import {addColor} from '../../../store/actions'
-import { push } from 'connected-react-router'
-
-// class AddColorForm extends Component {
-
-//     state = {
-        
-//     }
-
-//     submit = (e) => {
-//         e.preventDefault()
-//         const {_title, _color} = this.refs
-        
-//         this.props.onNewColor(_title.value, _color.value)
-        
-//         _title.value = ''
-//         _color.value = "#000000"
-//         _title.focus()
-//     }
-
-//     render() {
-//         return (
-//             <form onSubmit={this.submit}>
-//                 <input type="text" ref="_title" placeholder="some color" required />
-//                 <input type="color" ref="_color" required/>
-//                 <button>ADD</button>
-//             </form>
-//         )
-//     }
-
-//     componentDidMount() {
-//         console.log(this)
-//     }
-// }
 
 const AddColorForm = (props, {store}) => {
     let _title, _color;
